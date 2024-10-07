@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <meta name="viewport" content="width/device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </header>
+  <body onload="startTime()">
+    <!-- THE VIDEO -->
+    <video autoplay muted loop id="myVideo">
+      <source
+        src="/assets/mylivewallpapers.com-Loading-Hud.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <!-- TODO COMPARTMANT -->
+    <section class="todo">
+      <h2>To-do list</h2>
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
+        <button class="btn">Add</button>
+      </div>
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div class="todo-lower">
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIME COMPARTMANT -->
+    <section>
+      <div id="txt" class="time"></div>
+
+      <!-- EMBLED COMPARTMANT -->
+      <div class="spotify-embled">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/5fAcG9Ac4qqGJJ3udoI1rt?utm_source=generator&theme=0"
+          width="75%"
+          margin="3rem"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  </body>
+  <script></script>
+</html>
